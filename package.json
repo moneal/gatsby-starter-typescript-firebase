@@ -4,7 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "npm run clean --if-present",
+    "build": "gatsby build",
+    "predevelop": "npm run clean --if-present",
+    "notdevelop": "gatsby develop --port 5000",
+    "develop": "gatsby develop",
+    "predevelop-ssl": "npm run clean --if-present",
+    "develop-ssl": "gatsby develop --https --port 443",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "serve": "npm run develop -- --port 5000",
+    "start": "gatsby serve",
+    "serve-ssl": "npm run develop -- --https --port 443",
+    "clean": "gatsby clean",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
