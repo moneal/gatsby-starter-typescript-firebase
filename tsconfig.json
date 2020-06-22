@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "esnext",
+      // "target": "es5",
+      "jsx": "preserve",
+      "lib": ["dom", "es2015", "es2017"],
+      "strict": true,
+      "noEmit": true,
+      // "sourceMap": false,
+      "esModuleInterop": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "removeComments": false,
+      "resolveJsonModule": true,
+      "preserveConstEnums": true
+    },
+    "include": ["./src/**/*"]
+  }
