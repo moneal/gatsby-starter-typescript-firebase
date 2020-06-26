@@ -31,7 +31,7 @@ if (FIREBASE_PROJECT_ID && proxyFunctions) {
     })
   }
 } else {
-  console.warn('FIREBASE_PROJECT_ID env variable not found, skipping setup');
+  console.warn('FIREBASE_PROJECT_ID env variable not found, skipping proxy setup');
 }
 module.exports = {
   /* Your site config here */

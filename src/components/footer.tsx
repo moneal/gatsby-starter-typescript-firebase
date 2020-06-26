@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-const Footer = ({siteTitle}) => {
+const Footer: React.FC<{
+  siteTitle?: string,
+}> = ({siteTitle}) => {
   return (
     <footer
       style={{
@@ -26,9 +28,6 @@ const Footer = ({siteTitle}) => {
 
 Footer.propTypes = {
   siteTitle: PropTypes.string,
-};
+}
 
-Footer.defaultProps = {
-  siteTitle: ``,
-};
 export default Footer;
